@@ -1,4 +1,4 @@
-# Cryptographic Phase: Basic Encryption & Decryption 🔒
+# Project 2: Caesar_Cipher 🔒
 
 Welcome to my submission for **Project 2** of the Cybersecurity Industrial Training Program at **DecodeLabs** (Batch 2026). This project implements the fundamental mechanics of data confidentiality using symmetric key encryption through a Python-based **Caesar Cipher** engine.
 
@@ -39,4 +39,5 @@ The cryptographic engine maps characters to integers using their ASCII values an
 Fatine Bourhlid Cybersecurity Engineering Student Intern at DecodeLabs
 
 🔗 GitHub: https://github.com/fatinebourhlid
+
 🔗 LinkedIn: https://www.linkedin.com/in/fatine-bourhlid-8a157b291/
