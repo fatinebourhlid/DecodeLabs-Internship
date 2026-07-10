@@ -23,3 +23,8 @@ print("\n--- RESULTS ---")
 print(f"📄 Original Text:  {user_text}")
 print(f"🔒 Encrypted Text: {encrypted_msg}")
 print(f"🔓 Decrypted Text: {decrypted_msg}")
+
+# Save the ciphertext to a file for the Brute Force script
+with open("encrypted_output.txt", "w") as f:
+    f.write(encrypted_msg)
+print("\n[✓] Ciphertext saved to 'encrypted_output.txt' for vulnerability scanning.")
