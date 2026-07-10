@@ -8,7 +8,7 @@ An enterprise-grade, highly efficient **Password Strength Checker** developed fo
 
 The script processes data linearly ensuring validation time grows linearly ($O(n)$ Scan time complexity) and never exponentially, completely mitigating potential resource exhaustion vectors (DoS).
 
-```text
+
     [INPUT]  --------->      [PROCESS]       --------->   [OUTPUT]
  Raw Byte Stream       C-Optimized Short-Circuit      Risk Classification
    (Password)              Linear O(n) Scan               (Pass/Fail)
