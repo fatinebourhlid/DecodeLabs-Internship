@@ -1,6 +1,6 @@
-# Project 1: DecodeLabs Gatekeeper (Defensive Password Analyzer)
+# Project 1: DecodeLabs Password-checker
 
-An enterprise-grade, highly efficient **Password Strength Checker** developed following defensive coding practices and structural security architecture guidelines. This component acts as a rigorous **Gatekeeper** to enforce security policies prior to structural data processing or cryptographic hashing pipelines (e.g., Argon2id).
+An enterprise-grade, highly efficient **Password Strength Checker** developed following defensive coding practices and structural security architecture guidelines. This component acts as a rigorous **Password-checker** to enforce security policies prior to structural data processing or cryptographic hashing pipelines (e.g., Argon2id).
 
 ---
 
@@ -33,9 +33,16 @@ Advanced Vulnerability Mitigation (Timing Attacks): Early rejections on empty/sh
 Ensure you have a modern Python environment active, then run the structural defensive analyzer locally:
 
 Bash
-# Navigate to the project directory
+## Navigate to the project directory
 cd Project_1_Gatekeeper
 
 # Run the analyzer script
 python password_checker.py
 Developed under DecodeLabs Track Regulations for Applied Security Engineering.
+
+## Author
+Fatine Bourhlid Cybersecurity Engineering Student Cybersecurity Intern at DecodeLabs
+
+🔗 GitHub: https://github.com/fatinebourhlid
+
+🔗 LinkedIn: https://www.linkedin.com/in/fatine-bourhlid-8a157b291/
