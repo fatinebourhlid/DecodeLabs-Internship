@@ -32,12 +32,12 @@ Advanced Vulnerability Mitigation (Timing Attacks): Early rejections on empty/sh
 ## 🚀 Installation & Local Execution
 Ensure you have a modern Python environment active, then run the structural defensive analyzer locally:
 
-Bash
 ## Navigate to the project directory
-cd Project_1_Gatekeeper
+cd Project_1_Password_checker
 
 # Run the analyzer script
 python password_checker.py
+
 Developed under DecodeLabs Track Regulations for Applied Security Engineering.
 
 ## Author
