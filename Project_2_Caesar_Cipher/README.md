@@ -1,39 +1,50 @@
-# Project 2: Caesar_Cipher 🔒
+# DecodeLabs Cybersecurity Internship - Project 2 🔒
 
-Welcome to my submission for **Project 2** of the Cybersecurity Industrial Training Program at **DecodeLabs** (Batch 2026). This project implements the fundamental mechanics of data confidentiality using symmetric key encryption through a Python-based **Caesar Cipher** engine.
-
----
-
-## 🛠️ System Architecture (IPO Model)
-
-The application adheres strictly to the universal **Input-Process-Output (IPO)** architecture of cryptographic systems:
-
-1. **INPUT:** Accepts raw user text (Plaintext) and a customizable mathematical shift integer (Key).
-2. **PROCESS:** Performs mono-alphabetic substitution logic based on ASCII transformations and modular arithmetic.
-3. **OUTPUT:** Generates and displays both the obfuscated ciphertext and the reverse-engineered plaintext for verification.
+🛡️ **Cryptographic Foundations: Confidentiality & Vulnerability Analysis** **Batch:** 2026 | **Author:** Fatine Bourhlid 
 
 ---
 
-## 🔬 Mathematical Logic
-
-The cryptographic engine maps characters to integers using their ASCII values and processes them with finite alphabet wrapping:
-
-* **Encryption Formula:** 
-  $$E_n(x) = (x + n) \pmod{26}$$
-
-* **Decryption Formula:** 
-  $$D_n(x) = (x - n) \pmod{26}$$
-
-### Implementation Details:
-* **Base Offsets:** Standardized to ASCII base `65` for Uppercase (`A-Z`) and `97` for Lowercase (`a-z`).
-* **Edge Case Handling:** All non-alphabetic characters (spaces, numbers, and punctuation) are preserved and bypass the shift logic dynamically.
+## 📋 Overview
+This project demonstrates the transition from classical cryptographic algorithms to modern industry-standard protocols. It fulfills the core objectives of Project 2 by implementing robust data obfuscation, demonstrating historical vulnerability analysis (Brute-Force), and deploying enterprise-grade symmetric encryption.
 
 ---
 
-## 🚀 How To Run
+## 🛠️ Project Structure
+
+The project has been scaled into three separate functional tools to reflect real-world modular engineering:
+
+1. 🔒 `Caesar_Cipher.py` – Core script handling classical cryptographic encryption and decryption logic using the IPO Model.
+2. 🕵️‍♂️ `brute_force.py` – An offensive security tool designed to exploit the mathematical vulnerabilities of historical mono-alphabetic ciphers.
+3. 🚀 `AES_encryp.py` – An advanced symmetric encryption pipeline using AES-256 in Galois/Counter Mode (GCM) to ensure both Confidentiality and Authenticated Integrity.
+
+---
+
+## 💻 Implementation Details
+
+### 1. Classical Cryptography: Caesar Cipher
+Implements the mathematical substitution cipher using character-to-integer translation (ASCII).
+
+* **Mathematical Formula:** * Encryption: $E_n(x) = (x + n) \pmod{26}$
+  * Decryption: $D_n(x) = (x - n) \pmod{26}$
+
+### 2. Offensive Analysis: Brute Force Protocol
+Demonstrates the critical vulnerability identified in DecodeLabs materials: **Tiny Key Space**. Because the cipher only has 25 possible keys, an attacker can effortlessly reverse the data in transit by attempting every permutation.
+
+### 3. Modern Protection: Enterprise AES-256 (GCM Mode)
+Addresses the "Pattern Preservation" and integrity flaws of historical encryption by implementing:
+* **256-bit Key:** Generates a secure 32-byte key using `get_random_bytes(32)`, making brute-force attacks mathematically impossible.
+* **Nonce (Number Used Once):** Prevents pattern preservation. Even if the same plaintext is encrypted multiple times, the output remains uniquely random.
+* **Authenticated Encryption (GCM):** Generates an **Auth Tag** to verify data integrity, ensuring any unauthorized modifications f transit are immediately detected.
+
+---
+
+## 🚀 How to Run the Lab
 
 ### Prerequisites
-* Python 3.x installed on your environment.
+Install the required production-grade library:
+
+pip install pycryptodome
+---
 
 ### Author
 Fatine Bourhlid Cybersecurity Engineering Student Intern at DecodeLabs
